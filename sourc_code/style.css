@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "Header Header Header"
+    "Content Content Content"
+    "Footer Footer Footer";
+}
+#Header{
+    grid-area: Header;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New';
+    display: grid;
+    grid-template-areas: 
+    "Logo Menu TimKiem"
+    "Banner Banner Banner";
+    grid-template-columns: 1fr 2fr 1.5fr;
+}
+
+
+/* Logo */
+#Logo{
+    grid-area: Logo;
+    display: flex;
+    width: 300px;
+}
+#Logo a{
+    text-decoration: none;
+}
+#Logo h1{
+    padding-top: 45px;
+    padding-left: 20px;
+    color: #F4A55D;
+} 
+/* menu */
+#Menu{
+    margin: 5px;
+    width: 800px;
+    grid-area: Menu;
+}
+#Menu ul{
+    list-style-type: none;
+    text-align: center;
+}
+#Menu ul li{
+    text-decoration: none;
+    display: inline-table;
+    margin-top: 40px;
+    padding: 10px;
+    width: 110px;
+    position: relative;
+}
+#Menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+#Menu ul li a:hover{
+    background-color: #F4A55D;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#Menu ul li > .sub-memu{
+    display: none;
+    position: absolute;
+}
+#Menu ul li > .sub-memu li{
+    margin: 0px;
+    padding: 10px 0px;
+    width: 150px;
+    background-color: #F4A55D;
+}
+#Menu ul li:hover .sub-memu {
+    display: block;
+}
+#TimKiem{
+    margin-left: 40px;
+    grid-area: TimKiem;
+}
+#TimKiem button{
+    margin-right: 35px;
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    background-color: #F4A55D;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Courier New';
+}
+#TimKiem button:hover{
+    box-shadow: #e8e8e8 5px 6px 6px;
+}
+#Banner{
+    height: 500px;
+    grid-area: Banner;
+    background-image: url("nen.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    border: 0px;
+}
+#Banner h1{
+    padding: 130px 270px 20px 100px;
+    text-align: right;
+    font-size: 60px;
+}
+#Banner p{
+    text-align: right;
+    padding: 0px 140px 0px 100px;
+    font-size: 30px;
+}
+#Content{
+    background-color: #e8e8e8;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+#Con{
+    margin: 100px 200px;
+    grid-area: Content;
+    display: grid;
+    grid-template-areas: 
+    "EMAIL LOCATION PHONE"
+    "nhap nhap nhap"
+    "subject subject subject"
+    "message message message"
+    "Nut Nut Nut";
+    width: 1000px;
+    background-color: #ffff;
+    padding: 40px;
+}
+#Content h2{
+    font-family: 'Courier New';
+}
+#Content p{
+    font-family: 'Courier New';
+    color:rgb(110, 112, 114);
+}
+#Con #icon{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+#Con input{
+    height: 50px;
+    padding-left: 20px;
+}
+/*table*/
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table tr > td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#HoTen{
+    width: 300px;
+}
+.TD{
+    background-color: #F4A55D;
+}
+.STT{
+    width: 50px;
+    text-align: center;
+}
+.TM{
+    width: 500px;
+}
+#nhap{
+    display: flex;
+    grid-area: nhap;
+}
+input{
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+}
+textarea{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+}
+#EMAIL{
+    display: flex;
+    margin-top: 30px;
+    grid-area: EMAIL;
+}
+#LOCATION{
+    display: flex;
+    margin-top: 30px;
+    grid-area: LOCATION;
+}
+#PHONE{
+    display: flex;
+    margin-top: 30px;
+    grid-area: PHONE;
+}
+#name{
+    margin-top: 30px;
+    grid-area: name;
+}
+#mail{
+    margin-top: 30px;
+    grid-area: mail;
+}
+#subject{
+    margin-top: 30px;
+    grid-area: subject;
+
+}
+#message{
+    margin-top: 30px;
+    grid-area: message;
+}
+#Con #nuts{
+    grid-area: Nut;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 200px;
+    height: 60px;
+    background-color: #F4A55D;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Courier New';
+}
+#Con #nuts2{
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 200px;
+    height: 60px;
+    background-color: #F4A55D;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Courier New';
+}
+#Con button:hover{
+    box-shadow: #e8e8e8 5px 6px 6px;
+}
+#Con {
+    justify-content: center;
+    align-items: center;
+}
+#Footer{
+    padding: 100px;
+    grid-area: Footer;
+    background-image: url("nen_footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #ffff;
+    background-color: rgb(27, 20, 20);
+}
+#FHeader{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#Footer h1{
+    font-family: 'Courier New';
+}
+#FLogo{
+    display: flex;
+}
+#FLogo h1{
+    margin-left: 20px;
+}
+#Footer input {
+    margin-top: 20px;
+    background-color: #e8e8e8;
+    width: 150px;
+    border: 0px;
+    padding: 18px;
+}
+#ThongTin{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+#imgLienLac{
+    display: flex;
+}
+#lich{
+    display: flex;
+}
+#lich #Gio{
+    margin-left: 10px;
+}
+#LienLac{
+    margin-left: 150px;
+}
+#OPENING{
+    margin-left: 150px;
+} 
+#TheoDoi{
+    margin-left: 150px;
+}
+#TheoDoiimg{
+    display: flex;
+}
+#TheoDoiimg img{
+    margin-right: 10px;
+}

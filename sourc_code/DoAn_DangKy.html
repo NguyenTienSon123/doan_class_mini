@@ -1,0 +1,73 @@
+</DOCTYPE html>
+<head>
+    <title>Bai 3 </title>
+    <style>
+        body{
+            background-image: url("https://png.pngtree.com/background/20230323/original/pngtree-blackboard-desk-cartoon-background-picture-image_2164645.jpg");
+            position: relative;
+        }
+        h1{
+            text-align: center;
+            color:green;
+            font-family: Calibri;
+        }
+        #content{
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 30px 60px 30px 60px;
+            height: 300px;
+            width: 400px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        input{
+            font-family: Calibri;
+            border: 1px solid green;
+            border-radius: 2px;
+            box-shadow: 2px 2px 2px green;
+        }
+        label{
+            font-family: Calibri;
+            color:green;
+            font-weight:bolder ;
+        }
+        button{
+            padding: 0px;
+            border-radius: 3px;
+            color :white;
+            background-color: red;
+            width:240px;
+            height: 30px;
+            
+        }
+        #content .Nhap{
+            width: 230px;
+        }
+</style>
+</head>
+<body>
+   <div id="content">
+    <h1>Đăng Ký</h1>
+    <label>Email :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input class="Nhap" type="text"><br><br>
+    <label>Mật khẩu :     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input class="Nhap" type="text"><br><br>
+    <label>Tên đăng nhập : &nbsp;&nbsp;&nbsp;</label>
+    <input class="Nhap" type="text"><br><br>
+    <label>Bạn là : </label>
+    <input type="radio" class="DT" name="DT" value="GV">
+    <label for="html">Giáo viên</label>
+    <input type="radio" class="DT" name="DT" value="HS">
+    <label for="css">Học sinh</label>
+    <input type="radio" class="DT" name="DT" value="PH">
+    <label for="javascript">Phụ huynh</label><br><br>
+    <button style="position: absolute; left: 50%; transform: translate(-50%, 27%);"> Đăng Ký</button>
+   </div>
+   <script>
+   </script>
+</body>
+</html>
